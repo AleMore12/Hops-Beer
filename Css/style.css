@@ -3,7 +3,7 @@
     margin: 0px;
     padding : 0px;
     box-sizing: border-box;
-    font-family: serif
+    font-family: sans-serif
 }
 body{
     overflow-x: hidden;
@@ -623,8 +623,14 @@ body{
     height: 100px; 
     justify-content: center;
 }
-.logo__contac{
-    margin-left: 0%;
+.logo__contac img{
+    display: flex;
+    justify-content: start;
+    transition: all 1s;
+}
+.logo__contac img:hover{
+    transform: scale(1.5);
+    margin-top: 25px;
 }
 
 .form__1 label{
