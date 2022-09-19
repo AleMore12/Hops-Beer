@@ -391,7 +391,6 @@ body{
 @media (max-width: 450px) {
     #article__cvz div{
         display: block;
-
     }
     #article__cvz p{
         display: block;
@@ -442,12 +441,7 @@ body{
         margin-top: 100px;
     }
 }  
- @media (min-width: 412px) {
-    
-    .ale{
-        margin-top: 100px;
-    }
- }
+
 
    
     
