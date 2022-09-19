@@ -225,29 +225,25 @@ body{
 }
 #article__cvz{
     display: grid;
-    gap: 25px;
     grid-template-columns: 3fr;
-    grid-template-rows: 200px 500px 200px, 500px
-    200px, 500px, 200px, 500px, 200px;
+    grid-template-rows: repeat(9,300px);
     margin-top: 100px;
 }
 
 .lager__cvz{
-    
+    display: flex;
+    justify-content: center;
     margin-top: auto;
     margin-bottom: 35px;
-    height: min-content;
+}
+.lager__cvz__1 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px
 }
 .lager__cvz__1 img{
     border-radius: 10px;
-    height: 55%;
-}
-
-.lager__cvz__1 {
-    display: flex;
-    gap: 25px;
-    flex-direction: row;
-    margin-top: 10px
+    height: 80%;
 }
 
 .ipa__apa {
@@ -256,26 +252,23 @@ body{
     margin-top: auto;
     margin-bottom: 35px;
 }
-
 .ipa__1{
     display: flex;
-    gap: 25px;
     flex-direction: row;
     margin-top: 10px;
     padding-bottom: 50px;
 }
 .ipa__1 img{
     border-radius: 10px;
-    height: 55%;
+    height: 100%;
 }
 
 .apa__1 img{
     border-radius: 10px;
-    height: 55%;
+    height: 80%;
 }
 .apa__1{
     display: flex;
-    gap: 25px;
     flex-direction: row-reverse;
 }
 
@@ -287,13 +280,12 @@ body{
 }
 .stout__porter__1{
     display: flex;
-    gap: 25px;
     flex-direction: row-reverse;
     margin-top: 10px
 }
 .stout__porter__1 img{
     border-radius: 10px;
-    height: 55%;
+    height: 80%;
 }
 
 .bock {
@@ -304,11 +296,10 @@ body{
 }
 .bock__1 img{
     border-radius: 10px;
-    height: 55%;
+    height: 80%;
 }
 .bock__1 {
     display: flex;
-    gap: 25px;
     flex-direction: row;
     margin-top: 10px
 }
@@ -325,7 +316,6 @@ body{
 }
 .ale__1 {
     display: flex;
-    gap: 25px;
     flex-direction: row-reverse;
     margin-top: 10px
 }
@@ -342,7 +332,6 @@ body{
 }
 .pilsen__1 {
     display: flex;
-    gap: 25px;
     flex-direction: row;
     margin-top: 10px
 }
@@ -359,10 +348,130 @@ body{
 }
 .pale__ale__1{
     display: flex;
-    gap: 25px;
     flex-direction: row-reverse;
     margin-top: 10px
 }
+
+
+
+@media (max-width: 949px) {
+    #article__cvz div{
+        display: block;
+        margin-bottom: 50px;
+    }
+    #article__cvz p{
+        display: block;
+    }
+    #article__cvz img{
+        width: 55%;
+    }
+    .ipa__1 p{
+        margin-bottom: 35px;
+    }
+    .apa__1 img{
+        margin-top: 50px;
+    }
+}
+@media (max-width: 597px) {
+    #article__cvz div{
+        display: block;
+        margin-bottom: 50px;
+    }
+    #article__cvz p{
+        display: block;
+    }
+    #article__cvz img{
+        display: flex;
+    }
+    .ipa__1 p{
+        margin-bottom: 55px;
+    }
+    .apa__1 img{
+        margin-top: 65px;
+    }
+}
+@media (max-width: 450px) {
+    #article__cvz div{
+        display: block;
+        margin-bottom: 80px;
+    }
+    #article__cvz p{
+        display: block;
+    }
+    #article__cvz img{
+        display: flex;
+        width: 100%;
+    }
+    .ipa__1 p{
+        margin-bottom: 55px;
+    }
+    .apa__1 img{
+        margin-top: 65px;
+    }
+    .ale{
+        margin-top: 50px;
+    }
+    #article__cvz{
+        display: grid;
+        grid-template-columns: 3fr;
+        grid-template-rows: repeat(9,300px);
+        margin-top: 100px;
+    }
+}
+@media (max-width: 360px) {
+    #article__cvz div{
+        display: block;
+        margin-bottom: 80px;
+    }
+    #article__cvz p{
+        display: block;
+    }
+    #article__cvz img{
+        display: flex;
+        width: 100%;
+    }
+    .ipa__1 p{
+        margin-bottom: 55px;
+    }
+    .apa__1 img{
+        margin-top: 65px;
+    }
+    .ale{
+        margin-top: 100px;
+    }
+    #article__cvz{
+        display: grid;
+        grid-template-columns: 3fr;
+        grid-template-rows: repeat(9,300px);
+        margin-top: 100px;
+    }
+}
+    
+@media (max-width: 500px) {
+    #article__cvz div{
+        display: block;
+        margin-bottom: 80px;
+    }
+    #article__cvz p{
+        display: block;
+    }
+    #article__cvz img{
+        display: flex;
+        width: 100%;
+        text-align: center;
+    }
+    #article__cvz{
+        display: grid;
+        grid-template-columns: 3fr;
+        grid-template-rows: repeat(9,300px);
+        margin-top: 100px;
+    }
+    }
+
+
+
+
+
 
 
 /* Pag.Destinos */
