@@ -352,18 +352,16 @@ body{
     margin-top: 10px
 }
 
-
-
 @media (max-width: 949px) {
     #article__cvz div{
         display: block;
-        margin-bottom: 50px;
     }
     #article__cvz p{
         display: block;
     }
     #article__cvz img{
         width: 55%;
+        height: auto;
     }
     .ipa__1 p{
         margin-bottom: 35px;
@@ -375,7 +373,7 @@ body{
 @media (max-width: 597px) {
     #article__cvz div{
         display: block;
-        margin-bottom: 50px;
+
     }
     #article__cvz p{
         display: block;
@@ -393,7 +391,7 @@ body{
 @media (max-width: 450px) {
     #article__cvz div{
         display: block;
-        margin-bottom: 80px;
+
     }
     #article__cvz p{
         display: block;
@@ -401,6 +399,7 @@ body{
     #article__cvz img{
         display: flex;
         width: 100%;
+        height: auto;
     }
     .ipa__1 p{
         margin-bottom: 55px;
@@ -418,10 +417,12 @@ body{
         margin-top: 100px;
     }
 }
-@media (max-width: 360px) {
-    #article__cvz div{
-        display: block;
-        margin-bottom: 80px;
+@media (max-width: 486) {
+    #article__cvz{
+        display: grid;
+        grid-template-columns: 3fr;
+        grid-template-rows: repeat(9,300px);
+        margin-top: 100px;
     }
     #article__cvz p{
         display: block;
@@ -429,6 +430,7 @@ body{
     #article__cvz img{
         display: flex;
         width: 100%;
+        height: auto;
     }
     .ipa__1 p{
         margin-bottom: 55px;
@@ -439,34 +441,19 @@ body{
     .ale{
         margin-top: 100px;
     }
-    #article__cvz{
-        display: grid;
-        grid-template-columns: 3fr;
-        grid-template-rows: repeat(9,300px);
-        margin-top: 100px;
-    }
-}
+}  
+ @media (min-width: 412px) {
     
-@media (max-width: 500px) {
-    #article__cvz div{
-        display: block;
-        margin-bottom: 80px;
-    }
-    #article__cvz p{
-        display: block;
-    }
-    #article__cvz img{
-        display: flex;
-        width: 100%;
-        text-align: center;
-    }
-    #article__cvz{
-        display: grid;
-        grid-template-columns: 3fr;
-        grid-template-rows: repeat(9,300px);
+    .ale{
         margin-top: 100px;
     }
-    }
+ }
+
+   
+    
+    
+    
+    
 
 
 
