@@ -9,7 +9,7 @@ body{
     overflow-x: hidden;
 }
 nav ul {
-    letter-spacing: 30px;
+    letter-spacing: 20px;
     width: max-content;
     margin-top: 20px;
 }
@@ -27,20 +27,31 @@ p {
 }
 /* Pag.index*/
 
-#header ul li a{
+#header ul li {
     text-decoration: none;
+    display: inline; 
+}
+#header ul li a{
     color: white;
+    text-decoration: none;
+    transition: all 0.1s;
 }
 #header ul li a:hover{
     color: orange;
-    padding-left: 2px
+    padding-bottom: 8px;
 }
-.nav ul li{
-    display: inline;
+.nav ul{
+    margin-bottom: 40px;  
+    padding-left: 35px;
+    padding-bottom: 10px;
+}
+.nav ul li a{
     letter-spacing: 3px;
 }
-#header a{
-    margin-left: 20px;
+.nav ul li a{
+    display: inline;
+    box-shadow: 0px 10px 10px black;
+    box-shadow: 0px 10px 10px -6px black;
 }
 #header h1 {
     font-size: 55px;
@@ -50,6 +61,8 @@ p {
 #header h4{
     font-size: 25px;
     text-align: center;
+    color: orange;
+    font-family:serif;
 }
 .logo__index{
     display: flex;
@@ -101,9 +114,7 @@ p {
     transform: scale(2);
     padding-bottom: 30px;
 }
-#header{
-    background-color: rgb(32, 32, 32);
-}
+
 .div__h1 h1,h4 {
     color: orange;
     font-size: 54px;
@@ -145,16 +156,17 @@ p {
 /* Pag.Cervezas */
 
 #header__cerveza ul li {
-        text-decoration: none;
-        display: inline; 
+    text-decoration: none;
+    display: inline; 
 }
 #header__cerveza ul li a{
     color: white;
     text-decoration: none;
+    transition: all 0.1s;
 }
 #header__cerveza ul li a:hover{
     color: orange;
-    padding-left: 2px;
+    padding-bottom: 8px;
 }
 .nav__cvz ul{
     margin-bottom: 40px;  
@@ -164,8 +176,20 @@ p {
 .nav__cvz ul li a{
     letter-spacing: 3px;
 }
+.nav__cvz ul li a{
+    display: inline;
+    box-shadow: 0px 10px 10px black;
+    box-shadow: 0px 10px 10px -6px black;
+}
 .logo__cvz{
     text-align: center;
+}
+.logo__cvz img{
+    transition: all 1s;
+}
+.logo__cvz img:hover{
+    transform: scale(1.5);
+    margin-top: 25px;
 }
 .img1__cvz img{
     width:100%;
@@ -394,10 +418,11 @@ body{
 #header__destinos ul li a{
     color: white;
     text-decoration: none;
+    transition: all 0.1s;
 }
 #header__destinos ul li a:hover{
     color: orange;
-    padding-left: 2px;
+    padding-bottom: 8px;
 }
 .nav__destin ul{
     margin-bottom: 40px;  
@@ -407,9 +432,21 @@ body{
 .nav__destin ul li a{
     letter-spacing: 3px;
 }
+.nav__destin ul li a{
+    display: inline;
+    box-shadow: 0px 10px 10px black;
+    box-shadow: 0px 10px 10px -6px black;
+}
 .div__1destin{
     display: flex;
     justify-content: center;
+}
+.div__1destin img{
+    transition: all 1s;
+}
+.div__1destin img:hover{
+    transform: scale(1.5);
+    margin-top: 25px;
 }
 #header__destinos h2{
     text-align: center;
@@ -608,31 +645,31 @@ body{
 
 /* Pag.Contacto */
 
-#header__contac ul li{
+#header__contac ul li {
     text-decoration: none;
-    display: inline;
-    letter-spacing: 3px;
-    margin-bottom: 30px;  
-    padding-left: 15px;
-    padding-bottom: 10px;
+    display: inline; 
 }
 #header__contac ul li a{
     color: white;
-    text-decoration: none
+    text-decoration: none;
+    transition: all 0.1s;
 }
-#header__contac a:hover{
+#header__contac ul li a:hover{
     color: orange;
-    padding-left: 2px;
+    padding-bottom: 8px;
 }
-#header__contac ul{
-    text-align: left;
-    padding-top: 30px;
-    margin-bottom: 50px;
+.nav__contac ul{
+    margin-bottom: 40px;  
+    padding-left: 35px;
+    padding-bottom: 10px;
 }
-#header__contac h2{
-    color: orange;
-    font-family: serif;
-    font-size: 45px;
+.nav__contac ul li a{
+    letter-spacing: 3px;
+}
+.nav__contac ul li a{
+    display: inline;
+    box-shadow: 0px 10px 10px rgb(95, 92, 92);
+    box-shadow: 0px 10px 10px -6px rgb(95, 92, 92);
 }
 .logo__contac{
     display: flex;
@@ -646,6 +683,15 @@ body{
     transform: scale(1.5);
     margin-top: 25px;
 }
+#header__contac h1{
+    color: orange;
+    font-size: 55px;
+    text-align: center;
+}
+#header__contac h4{
+    font-size: 25px;
+    text-align: center;
+}
 
 .form__1 label{
     font-family: sans-serif
@@ -656,18 +702,6 @@ body{
 
 .nav__contac ul li a{
     letter-spacing: 3px;
-}
-.div__h1-h4{
-    text-align: center;
-}
-.div__h1-h4 h1{
-    font-size: 55px;
-    color: orange;
-    justify-items: start;
-}
-.div__h1-h4 h4{
-    font-size: 25px;
-    justify-items: center;
 }
 
 #section1__contac h2{
