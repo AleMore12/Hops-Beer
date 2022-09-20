@@ -35,27 +35,27 @@ p {
     color: orange;
     padding-left: 2px
 }
+.nav ul li{
+    display: inline;
+    letter-spacing: 3px;
+}
 #header a{
     margin-left: 20px;
 }
-#header h1{
+#header h1 {
     font-size: 55px;
+    text-align: center;
+    color: orange;
 }
 #header h4{
     font-size: 25px;
+    text-align: center;
 }
 .logo__index{
     display: flex;
     justify-content: center;
 }
-.div__h1 {
-    text-align: center;
-}
 
-.nav ul li{
-    display: inline;
-    letter-spacing: 3px;
-}
 #article__1{
     margin-top: 20px;
 }
@@ -146,29 +146,27 @@ p {
 
 #header__cerveza ul li {
         text-decoration: none;
-        display: inline;  
+        display: inline; 
 }
-
 #header__cerveza ul li a{
     color: white;
     text-decoration: none;
 }
-
 #header__cerveza ul li a:hover{
     color: orange;
     padding-left: 2px;
 }
-
 .nav__cvz ul{
-    margin-bottom: 40px;
-    letter-spacing: 30px;  
+    margin-bottom: 40px;  
     padding-left: 35px;
     padding-bottom: 10px;
 }
 .nav__cvz ul li a{
     letter-spacing: 3px;
 }
-
+.logo__cvz{
+    text-align: center;
+}
 .img1__cvz img{
     width:100%;
 }
@@ -181,34 +179,20 @@ p {
     border: 5px solid orange;
     border-radius: 10px;
 }
-
 body{
     background-color:rgb(32, 32, 32);
 }
-
 #header__cerveza video{
     width: 100%;
 }
 #header__cerveza img{
-    height: 100px;
-    width: 100px;
-    margin-left: 46%;   
-}
-.logo__cvz{
-    display: flex;
-    justify-items: center;
-}
-.div__h2{
-    text-align: center;
-}
-#header__cerveza img{
     background-image: url("../multimedia/choque-birragif.gif");
 }
-
 #header__cerveza h2 {
     font-size: 65px;
     padding-bottom: 50px;
     color: orange;
+    text-align: center;
 }
 
 .nav__cvz ul{
@@ -403,35 +387,35 @@ body{
 
 /* Pag.Destinos */
 
+#header__destinos ul li {
+    text-decoration: none;
+    display: inline; 
+}
 #header__destinos ul li a{
     color: white;
     text-decoration: none;
 }
-#header__destinos ul li{
-    display: inline;
+#header__destinos ul li a:hover{
+    color: orange;
+    padding-left: 2px;
 }
-#header__destinos img{
-    margin-left: 46%;
+.nav__destin ul{
+    margin-bottom: 40px;  
+    padding-left: 35px;
+    padding-bottom: 10px;
+}
+.nav__destin ul li a{
+    letter-spacing: 3px;
+}
+.div__1destin{
+    display: flex;
+    justify-content: center;
 }
 #header__destinos h2{
     text-align: center;
     font-size: 65px;
     padding-bottom: 50px;
     color: orange;
-}
-
-.nav__destin ul{
-    margin-bottom: 40px;
-    margin-left: 15px;
-    letter-spacing: 40px;
-}
-
-.nav__destin ul li{
-    letter-spacing: 3px;
-}
-#header__destinos a:hover {
-    color: orange;
-    padding-left: 2px;
 }
 
 .img1__destin img{
@@ -650,18 +634,12 @@ body{
     font-family: serif;
     font-size: 45px;
 }
-#header__contac img{
-    margin-left: 46%;
-}
-#header__contac img{
-    border-radius: 50px;
-    width: 100px;
-    height: 100px; 
+.logo__contac{
+    display: flex;
     justify-content: center;
 }
 .logo__contac img{
-    display: flex;
-    justify-content: start;
+    border-radius: 50px;
     transition: all 1s;
 }
 .logo__contac img:hover{
@@ -672,7 +650,6 @@ body{
 .form__1 label{
     font-family: sans-serif
 }
-
 .nav__contac ul {
     background-color: black
 }
@@ -680,7 +657,6 @@ body{
 .nav__contac ul li a{
     letter-spacing: 3px;
 }
-
 .div__h1-h4{
     text-align: center;
 }
