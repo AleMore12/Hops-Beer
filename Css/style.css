@@ -378,7 +378,7 @@ body{
 }
 
  
-@media (min-width: 400px) and (max-width: 597px){
+@media (min-width: 350px) and (max-width: 597px){
     #article__cvz{
         display: grid;
         grid-template-columns: 3fr;
