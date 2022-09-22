@@ -5,16 +5,38 @@
     box-sizing: border-box;
     font-family: sans-serif
 }
-body{
-    overflow-x: hidden;
+:root{
+    --bs-link-hover-color: orange !important;
+  }
+#header{
+    width: 100%;
 }
+.cvz-title{
+    width: 100%;
+}
+.img-cvz{
+    width: 100%;
+}
+#article__1{
+    width: 100%;
+}
+#article__2{
+    width: 100%;
+}
+#article__3{
+    width: 100%;
+}
+.container{
+    width: 100%;
+}
+
 nav ul {
     letter-spacing: 20px;
     width: max-content;
     margin-top: 20px;
 }
-body{
-    background-color: rgb(32, 32, 32);;
+#header, section, main {
+    background-color: rgb(32, 32, 32);
 }
 h2 a {
     color: orange;
@@ -25,7 +47,9 @@ p {
     color: orange;
     font-size: 20px;
 }
+
 /* Pag.index*/
+
 
 #header ul li {
     text-decoration: none;
@@ -45,6 +69,7 @@ p {
     padding-left: 35px;
     padding-bottom: 10px;
 }
+
 .nav ul li a{
     letter-spacing: 3px;
 }
@@ -70,18 +95,23 @@ p {
 }
 
 #article__1{
-    margin-top: 20px;
+    padding-top: 20px;
 }
-#article__1 h2{
+.cvz-title h2{
     text-align: center;
     transition: all 1s;
+    color: orange;
 }
-#article__1 h2:hover{
+.cvz-title h2:hover{
+    color: orange;
     transform: scale(2);
     padding-bottom: 30px;
 }
 #article__1 a{
     font-size: 35px;
+}
+.img-cvz{
+    background-color: rgb(32, 32, 32);
 }
 #article__2 a{
     font-size: 35px;
@@ -95,18 +125,23 @@ p {
     transform: scale(2);
     padding-bottom: 30px;
 }
-#article__2 {
-    margin-top: 20px;
+#article__2 p {
+    background-color:rgb(32, 32, 32); 
+    margin-bottom: 0%;
+    padding-top: 10px;
 }
-#article__3 img{
-    width: 100%;
+
+#article__2 {
+    padding-top: 30px;
+}
+#article__3 {
+    padding-top: 10px;
+    padding-bottom: 100px;
 }
 #article__3 a{
     font-size: 35px;
 }
 #article__3 h2{
-    padding-top: 60px;
-    padding-bottom: 10px;
     text-align: center;
     transition: all 1s;
 }
@@ -121,38 +156,19 @@ p {
     font-family:serif;
 }
 
-#article__1 article div h2{
-    padding-top: 60px;
-    padding-bottom: 10px;
-}
-#article__1 div{
-    margin: top 20px;
-}
+
 #article__1 img{
     width: 100%;
 }
-#article__2 article{
-    margin-top: 50px;
-}
-#article__3 article{
-    margin-top: 50px;
+
+#article__3 p{ 
+    background-color: rgb(32, 32, 32);
 }
 
-#footer__1{
+.container-fluid{
     margin-top: 100px;
 }
-#footer__1 a:hover{
-    color: orange;
-}
-#footer__1 a{
-    color: white;
-    text-decoration: none;
-    margin-left: 210px;
-    padding-bottom: 15px;
-    padding-left: 10px;
-}
-
-
+  
 /* Pag.Cervezas */
 
 #header__cerveza ul li {
@@ -204,7 +220,7 @@ p {
     border-radius: 10px;
 }
 body{
-    background-color:rgb(32, 32, 32);
+    background-color:rgb(32, 32, 32) !important;
 }
 #header__cerveza video{
     width: 100%;
@@ -386,7 +402,7 @@ body{
 }
 
  
-@media (min-width: 232px) and (max-width: 597px){
+@media (min-width: 232px) and (max-width: 597px) {
     #article__cvz{
         display: grid;
         grid-template-columns: 3fr;
@@ -408,6 +424,8 @@ body{
         margin-top: 250px;
     }
 }
+
+
 
 /* Pag.Destinos */
 
@@ -778,5 +796,3 @@ body{
 
 
 /* Pag.Zona Sur */
-
-

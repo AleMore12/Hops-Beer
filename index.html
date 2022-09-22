@@ -8,61 +8,101 @@
     <link rel="stylesheet" href="./Css/style.css">
     <link rel="shortcut icon" href="./multimedia/icono4.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+</head> 
 <body>
     
     <header id="header">
-            <div class="logo__index">
-                <img src="./multimedia/icono1.jpg" alt="logo" class="logo" width="100px" height="100px" >
-            </div>
-            <div class="animate__animated animate__backInDown" >
-                <h1>Cervecerías</h1>
-                <h4>En Buenos Aires</h4> 
-            </div>
-            <nav class="nav">
-                <ul>
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./pages/destinos.html">Destinos</a></li>
-                    <li><a href="./pages/contacto.html">Contactarnos</a></li>
-                </ul>
-            </nav>
+        <div class="logo__index">
+            <img src="./multimedia/icono1.jpg" alt="logo" class="logo" width="100px" height="100px" >
+        </div>
+        <div class="animate__animated animate__backInDown" >
+            <h1>Cervecerías</h1>
+            <h4>En Buenos Aires</h4> 
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./pages/destinos.html">Destinos</a></li>
+                <li><a href="./pages/contacto.html">Contactarnos</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section id="article__1">
-        <article>
-            <div>
-                <h2><a href="./pages/cerveza.html">Cervezas</a></h2>
-            </div>
-            <div>   
-                <img src="./multimedia/Multimedia CERVEZAS/beer style.jpg" alt="estilosCerveza">       
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione hic numquam similique nulla, veritatis nesciuntquos laborum maiores ducimus? Illo, corporis in ex dolorum recusandae laboriosam nam libero quia temporibus.</p>
-            </div>
-        </article>
+    <section class="article__1">
+        <div class="cvz-title">
+            <h2><a href="./pages/cerveza.html">Cervezas</a></h2>
+        </div>
+        <div class="img-cvz">   
+            <img src="./multimedia/Multimedia CERVEZAS/beer style.jpg" alt="estilosCerveza" width="100%">       
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione hic numquam similique nulla, veritatis nesciuntquos laborum maiores ducimus? Illo, corporis in ex dolorum recusandae laboriosam nam libero quia temporibus.</p>
+        </div>
+        
     </section>
-    
+
     <main id="article__2">
-        <article>
             <h2><a href="./pages/destinos.html">Destinos</a></h2>     
             <img src="./multimedia/Multimedia DESTINOS/cervezadestinos.jpg" alt="destinos" width="100%">
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique qui veritatis odio quia. Eum vel deserunt illo asperiores necessitatibus dolores nulla magni esse vitae, fuga reprehenderit aliquam autem dolore consectetur?</p>
-        </article>
     </main>
     
     <section id="article__3">
-        <article>
-                <h2><a href="./pages/elaboracion.html">Elaboración</a></h2>
-                <img src="./multimedia/Multimedia ELABORACION/Proceso cerveza mapa.jpg" alt="mapaProceso">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur illum vel consequuntur ratione cupiditate aliquid delectus corporis eius impedit sequi quidem repudiandae reprehenderit molestias placeat non commodi, recusandae suscipit minima!</p>
-        </article>
+            <h2><a href="./pages/elaboracion.html">Elaboración</a></h2>
+            <img src="./multimedia/Multimedia ELABORACION/Proceso cerveza mapa.jpg" alt="mapaProceso" width="100%">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur illum vel consequuntur ratione cupiditate aliquid delectus corporis eius impedit sequi quidem repudiandae reprehenderit molestias placeat non commodi, recusandae suscipit minima!</p>
     </section>
-        
-        <footer id="footer__1">
-            <div class="footer__2">
-                <a href="./index.html">Inicio</a>
-                <a href="...">Productos</a>
-                <a href="https://facebook.com" target="_blank">Facebook</a>
-                <a href="./pages/contacto.html">Contacto</a>
+
+
+    <div class="container-fluid">
+
+        <div class="row p-5 bg-dark">
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <p class="h3">Código AV</p>               
             </div>
-        </footer>
-    
+            
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <div class="mb-2">
+                    <h5 class="text-warning text-decoration-none">Sobre</h5>
+                </div>
+                <div class="mb-2">
+                    <a href="#">Link</a>
+                </div>
+                <div class="mb-2">
+                    <a href="#">Link</a>
+                </div>
+                <div class="mb-2">
+                    <a href="#">Link</a>
+                </div>
+            </div>
+              
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <div class="mb-2">
+                    <h5 class="text-warning text-decoration-none">Quienes Somos</h5>
+                </div>
+                <div class="mb-2">
+                    <a href="#">Link</a>
+                </div>
+                <div class="mb-2">
+                    <a href="#">Link</a>
+                </div>
+            </div>
+               
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <div class="mb-2">
+                    <h5 class="text-warning text-decoration-none">Contacto</h5>
+                </div>
+                <div class="mb-2">
+                    <a href="#">Link</a>
+                </div>
+            </div>
+            
+            <div class="col-xs-12 pt-5">
+                <p class="text-white text-center">Copyright - All rights reserved © 2022</p>
+            </div>
+
+        </div>
+        
+ <!-- JavaScript Bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>                   
 </body>
 </html>
