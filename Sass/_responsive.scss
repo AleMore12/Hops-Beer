@@ -1,0 +1,34 @@
+// Pag.Cervezas
+@media (min-width: 453px) and (max-width: 992px) {
+    #cont_cvz {
+        .lager_cvz,.apa,.bock,.pilsen,.ipa,.stout_porter,.ale,.pale_ale {
+            display: flex;
+            flex-direction: column;
+        }
+        .apa {
+            margin-top: 50px;
+        }
+    }
+}
+@media (max-width:590px) {
+    .cvz_style_h3 {
+        margin-top: 100px;
+        h3{
+            display: none;
+        }
+    }
+}
+//Pag.Destinos
+@media (min-width: 453px) and (max-width: 992px) {
+    #section1_destinos, .img1_destin p {
+        text-align: center;
+    }
+    .carousel {
+        width: 100%;
+        margin-left: 0%;
+        img {
+            height: auto;
+        }
+    }
+}
+    

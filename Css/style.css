@@ -7,7 +7,7 @@
 }
 :root{
     --bs-link-hover-color: orange !important;
-  }
+}
 #header{
     width: 100%;
 }
@@ -51,33 +51,7 @@ p {
 /* Pag.index*/
 
 
-#header ul li {
-    text-decoration: none;
-    display: inline; 
-}
-#header ul li a{
-    color: white;
-    text-decoration: none;
-    transition: all 0.1s;
-}
-#header ul li a:hover{
-    color: orange;
-    padding-bottom: 8px;
-}
-.nav ul{
-    margin-bottom: 40px;  
-    padding-left: 35px;
-    padding-bottom: 10px;
-}
 
-.nav ul li a{
-    letter-spacing: 3px;
-}
-.nav ul li a{
-    display: inline;
-    box-shadow: 0px 10px 10px black;
-    box-shadow: 0px 10px 10px -6px black;
-}
 #header h1 {
     font-size: 55px;
     text-align: center;
@@ -93,9 +67,42 @@ p {
     display: flex;
     justify-content: center;
 }
+.nav ul li a{
+    letter-spacing: 3px;
+}
+.nav ul li {
+    text-decoration: none;
+    display: inline; 
+}
+.nav ul li a{
+    color: white;
+    text-decoration: none;
+    transition: all 0.1s;
+}
+.nav ul li a:hover{
+    color: orange;
+    padding-bottom: 8px;
+}
+.nav ul{
+    margin-bottom: 40px;  
+    padding-left: 35px;
+    padding-bottom: 10px;
+}
+
+.nav ul li a{
+    display: inline;
+    box-shadow: 0px 10px 10px black;
+    box-shadow: 0px 10px 10px -6px black;
+}
 
 #article__1{
     padding-top: 20px;
+}
+#article__1 a{
+    font-size: 35px;
+}
+#article__1 img{
+    width: 100%;
 }
 .cvz-title h2{
     text-align: center;
@@ -106,9 +113,6 @@ p {
     color: orange;
     transform: scale(2);
     padding-bottom: 30px;
-}
-#article__1 a{
-    font-size: 35px;
 }
 .img-cvz{
     background-color: rgb(32, 32, 32);
@@ -150,16 +154,6 @@ p {
     padding-bottom: 30px;
 }
 
-.div__h1 h1,h4 {
-    color: orange;
-    font-size: 54px;
-    font-family:serif;
-}
-
-
-#article__1 img{
-    width: 100%;
-}
 
 #article__3 p{ 
     background-color: rgb(32, 32, 32);
@@ -168,9 +162,9 @@ p {
 .container-fluid{
     margin-top: 100px;
 }
-  
-/* Pag.Cervezas */
 
+/* Pag.Cervezas */
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 #header__cerveza ul li {
     text-decoration: none;
     display: inline; 
@@ -210,6 +204,11 @@ p {
 .img1__cvz img{
     width:100%;
 }
+.nav__cvz ul{
+    text-align: left;
+    background-color: rgb(32, 32, 32);
+    padding-top: 30px;
+}
 .img1__cvz h3{
     font-size: 50px;
     color: orange;
@@ -219,27 +218,11 @@ p {
     border: 5px solid orange;
     border-radius: 10px;
 }
-body{
-    background-color:rgb(32, 32, 32) !important;
-}
 #header__cerveza video{
     width: 100%;
 }
-#header__cerveza img{
-    background-image: url("../multimedia/choque-birragif.gif");
-}
-#header__cerveza h2 {
-    font-size: 65px;
-    padding-bottom: 50px;
-    color: orange;
-    text-align: center;
-}
 
-.nav__cvz ul{
-    text-align: left;
-    background-color: rgb(32, 32, 32);
-    padding-top: 30px;
-}
+
 
 
 #article__cvz h3{
@@ -247,6 +230,7 @@ body{
     font-size: 35px;
     font-family:'Times New Roman', Times, serif
 }
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 #article__cvz{
     display: grid;
     grid-template-columns: 3fr;
@@ -260,12 +244,12 @@ body{
     margin-top: auto;
     margin-bottom: 35px;
 }
-.lager__cvz__1 {
+.lager__cvz {
     display: flex;
     flex-direction: row;
     margin-top: 10px
 }
-.lager__cvz__1 img{
+.lager__cvz img{
     border-radius: 10px;
     height: 80%;
 }
@@ -401,7 +385,7 @@ body{
     }
 }
 
- 
+
 @media (min-width: 232px) and (max-width: 597px) {
     #article__cvz{
         display: grid;

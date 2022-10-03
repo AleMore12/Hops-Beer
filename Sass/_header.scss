@@ -1,0 +1,40 @@
+
+#header {
+    width: 100%;
+    h1{
+        font-size: 55px;
+        text-align: center;
+        color: map-get($colores, colorTxt );
+        font-family: 'Sancreek', cursive;
+    }
+    h4{
+        font-size: 25px;
+        text-align: center;
+        color: map-get($colores, colorTxt );
+        font-family: 'Sancreek', cursive;
+    }
+    .header_logo {
+        display: flex;
+        justify-content: center;
+    }
+    h2{
+        text-align: center;
+        color: map-get($colores, colorTxt );
+        font-size: 65px;
+    }
+    video {
+        width: 100%;
+        margin-top: 60px;
+    }
+    .navbar{
+        position: fixed;
+        z-index: 100;
+        border-radius: 10px;
+        opacity: .4;
+        .nav-link {
+            font-family: 'Elsie Swash Caps', cursive;
+        }
+    }
+}
+
+

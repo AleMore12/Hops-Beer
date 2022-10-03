@@ -1,0 +1,196 @@
+// Global
+* {
+    margin: 0px;
+    padding : 0px;
+    box-sizing: border-box;
+    p {
+        font-family: 'Elsie Swash Caps', cursive;
+        font-size: 20px;
+    }
+    h2,h3 {
+        font-family: 'Sancreek', cursive;
+    }
+}
+
+// Página index
+body {
+    p{
+        color: map-get($colores, colorTxt );
+    }
+}
+#article_1 {
+    padding-top: 20px;
+}
+#article_1,#article_2,#article_3 {
+    text-align: center;
+    margin-top: 80px;
+    a {
+        text-decoration: none;
+        color: map-get($colores, colorTxt );
+        font-family: 'Sancreek', cursive;
+    }
+    h2:hover{
+        color: map-get($colores, colorTxt );
+        transform: scale(2);
+        padding-bottom: 20px;
+        padding-top: 10px;
+        transition: all 1s;
+    }
+    p {
+        padding-top: 15px;
+    }
+    
+}
+#article_2 {
+    padding-top: 30px;
+
+}
+#article_3{
+    padding-top: 10px;
+    padding-bottom: 100px;
+
+}
+
+// Página Cerveza
+
+.estilos_cvz {
+    h3 {
+        font-size: 50px;
+        color: map-get($colores, colorTxt );
+        padding-top: 15px;
+        padding-bottom: 15px;
+        text-align: center;
+        border: 5px solid orange;
+        border-radius: 10px;
+    }
+    img {
+        width: 100%;
+    }
+    p {
+        text-align: center;
+    }
+}
+body {
+    background-color: map-get($colores, colorBg ) !important;
+}
+#cont_cvz {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    .cvz_style_h3 {
+        margin-right: 25%;
+        margin-left: 25%;
+        h3 {
+            color: map-get($colores, colorTxt );
+            text-align: center;
+            margin-top: 150px;
+            border: 5px solid orange;
+            border-radius: 10px;
+            height: 100px;
+            padding-top: 25px;
+            font-size: 40px;
+        }
+        p {
+            padding-top: 30px;
+        }
+    }
+    
+}
+.lager_cvz,.apa,.bock,.pilsen {
+    display: flex;
+    flex-direction: row-reverse;
+    p {
+        text-align: center;
+    }
+    img {
+        border-radius: 20px;
+    }
+}
+.ipa,.stout_porter,.ale,.pale_ale {
+    display: flex;
+    flex-direction: row;
+    p {
+        text-align: center;
+    }
+    img {
+        border-radius: 20px;
+    }
+}
+.apa {
+    padding-top: 100px;
+}
+.pale_ale {
+    margin-bottom: 200px;
+}
+
+// Página Destinos
+.carousel {
+    display: flex;
+    margin-left: 190px;
+    width: 70%;
+    height: auto;
+    img {
+        width: 100%;
+        height: 600px;
+        border-radius: 5px;
+    }
+}
+
+.img1_destin {
+    margin-top: 70px;
+}
+
+#section1_destinos {
+    h3{
+        text-align: center;
+        color: map-get($colores, colorTxt );
+        margin-top: 150px;
+        padding-bottom: 20px;
+        font-size: 40px;
+        a{
+            color: map-get($colores, colorTxt );
+            text-decoration: none;
+        }
+    }
+    p {
+        text-align: center;
+    }
+}
+
+
+
+
+// Páginas Contacto
+
+#section1_contac {
+    padding-left: 10px;
+    margin-top: 70px;
+    h2,h3, label, .div7__tYc { 
+        color: map-get($colores, colorTxt );
+    }
+    h2 {
+        font-size: 50px;
+    }
+    input {
+        display: flex;
+    }
+    .div6__msj {
+        display: flex;
+        flex-direction: column;
+        width:min-content;
+    }
+    .div7__tYc {
+        display: flex;
+        margin-top: 10px;
+        gap: 10px;
+    }
+    .div8__value {
+        display: flex;
+        gap: 40px;
+        padding-top: 20px;
+    }
+}
+
+
+
+

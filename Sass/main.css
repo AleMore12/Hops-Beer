@@ -1,0 +1,343 @@
+#header {
+  width: 100%;
+}
+#header h1 {
+  font-size: 55px;
+  text-align: center;
+  color: orange;
+  font-family: "Sancreek", cursive;
+}
+#header h4 {
+  font-size: 25px;
+  text-align: center;
+  color: orange;
+  font-family: "Sancreek", cursive;
+}
+#header .header_logo {
+  display: flex;
+  justify-content: center;
+}
+#header h2 {
+  text-align: center;
+  color: orange;
+  font-size: 65px;
+}
+#header video {
+  width: 100%;
+  margin-top: 60px;
+}
+#header .navbar {
+  position: fixed;
+  z-index: 100;
+  border-radius: 10px;
+  opacity: 0.4;
+}
+#header .navbar .nav-link {
+  font-family: "Elsie Swash Caps", cursive;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+* p {
+  font-family: "Elsie Swash Caps", cursive;
+  font-size: 20px;
+}
+* h2, * h3 {
+  font-family: "Sancreek", cursive;
+}
+
+body p {
+  color: orange;
+}
+
+#article_1 {
+  padding-top: 20px;
+}
+
+#article_1, #article_2, #article_3 {
+  text-align: center;
+  margin-top: 80px;
+}
+#article_1 a, #article_2 a, #article_3 a {
+  text-decoration: none;
+  color: orange;
+  font-family: "Sancreek", cursive;
+}
+#article_1 h2:hover, #article_2 h2:hover, #article_3 h2:hover {
+  color: orange;
+  transform: scale(2);
+  padding-bottom: 20px;
+  padding-top: 10px;
+  transition: all 1s;
+}
+#article_1 p, #article_2 p, #article_3 p {
+  padding-top: 15px;
+}
+
+#article_2 {
+  padding-top: 30px;
+}
+
+#article_3 {
+  padding-top: 10px;
+  padding-bottom: 100px;
+}
+
+.estilos_cvz h3 {
+  font-size: 50px;
+  color: orange;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  border: 5px solid orange;
+  border-radius: 10px;
+}
+.estilos_cvz img {
+  width: 100%;
+}
+.estilos_cvz p {
+  text-align: center;
+}
+
+body {
+  background-color: rgb(32, 32, 32) !important;
+}
+
+#cont_cvz {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+#cont_cvz .cvz_style_h3 {
+  margin-right: 25%;
+  margin-left: 25%;
+}
+#cont_cvz .cvz_style_h3 h3 {
+  color: orange;
+  text-align: center;
+  margin-top: 150px;
+  border: 5px solid orange;
+  border-radius: 10px;
+  height: 100px;
+  padding-top: 25px;
+  font-size: 40px;
+}
+#cont_cvz .cvz_style_h3 p {
+  padding-top: 30px;
+}
+
+.lager_cvz, .apa, .bock, .pilsen {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.lager_cvz p, .apa p, .bock p, .pilsen p {
+  text-align: center;
+}
+.lager_cvz img, .apa img, .bock img, .pilsen img {
+  border-radius: 20px;
+}
+
+.ipa, .stout_porter, .ale, .pale_ale {
+  display: flex;
+  flex-direction: row;
+}
+.ipa p, .stout_porter p, .ale p, .pale_ale p {
+  text-align: center;
+}
+.ipa img, .stout_porter img, .ale img, .pale_ale img {
+  border-radius: 20px;
+}
+
+.apa {
+  padding-top: 100px;
+}
+
+.pale_ale {
+  margin-bottom: 200px;
+}
+
+.carousel {
+  display: flex;
+  margin-left: 190px;
+  width: 70%;
+  height: auto;
+}
+.carousel img {
+  width: 100%;
+  height: 600px;
+  border-radius: 5px;
+}
+
+.img1_destin {
+  margin-top: 70px;
+}
+
+#section1_destinos h3 {
+  text-align: center;
+  color: orange;
+  margin-top: 150px;
+  padding-bottom: 20px;
+  font-size: 40px;
+}
+#section1_destinos h3 a {
+  color: orange;
+  text-decoration: none;
+}
+#section1_destinos p {
+  text-align: center;
+}
+
+#section1_contac {
+  padding-left: 10px;
+  margin-top: 70px;
+}
+#section1_contac h2, #section1_contac h3, #section1_contac label, #section1_contac .div7__tYc {
+  color: orange;
+}
+#section1_contac h2 {
+  font-size: 50px;
+}
+#section1_contac input {
+  display: flex;
+}
+#section1_contac .div6__msj {
+  display: flex;
+  flex-direction: column;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+}
+#section1_contac .div7__tYc {
+  display: flex;
+  margin-top: 10px;
+  gap: 10px;
+}
+#section1_contac .div8__value {
+  display: flex;
+  gap: 40px;
+  padding-top: 20px;
+}
+
+@media (min-width: 453px) and (max-width: 992px) {
+  #cont_cvz .lager_cvz, #cont_cvz .apa, #cont_cvz .bock, #cont_cvz .pilsen, #cont_cvz .ipa, #cont_cvz .stout_porter, #cont_cvz .ale, #cont_cvz .pale_ale {
+    display: flex;
+    flex-direction: column;
+  }
+  #cont_cvz .apa {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 590px) {
+  .cvz_style_h3 {
+    margin-top: 100px;
+  }
+  .cvz_style_h3 h3 {
+    display: none;
+  }
+}
+@media (min-width: 453px) and (max-width: 992px) {
+  #section1_destinos, .img1_destin p {
+    text-align: center;
+  }
+  .carousel {
+    width: 100%;
+    margin-left: 0%;
+  }
+  .carousel img {
+    height: auto;
+  }
+}
+.col-xs-12 a {
+  color: white;
+}
+.col-xs-12 a:hover {
+  color: greenyellow;
+}
+.col-xs-12 .socialw {
+  width: 235px;
+  margin: 100px auto 0 auto;
+  overflow: auto;
+  display: inline;
+  padding-top: 0px;
+}
+.col-xs-12 .social {
+  position: relative;
+  border: 1px solid #292929;
+  width: 37px;
+  height: 62px;
+  float: left;
+  margin-left: 10px;
+  overflow: hidden;
+}
+.col-xs-12 .first {
+  margin-left: 0px;
+}
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.col-xs-12 .fadeInDown {
+  -webkit-animation: fadeInDown 1s both 0.5s;
+  animation: fadeInDown 1s both 0.5s;
+}
+.col-xs-12 .social img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: margin-top 250ms ease-in;
+}
+.col-xs-12 .social:hover img {
+  margin-top: -62px;
+}
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.col-xs-12 .fadeInDown {
+  -webkit-animation: fadeInDown 1s both 0.5s;
+  animation: fadeInDown 1s both 0.5s;
+}
+.col-xs-12 .social img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: margin-top 250ms ease-in;
+}
+.col-xs-12 .social:hover img {
+  margin-top: -62px;
+}/*# sourceMappingURL=main.css.map */
