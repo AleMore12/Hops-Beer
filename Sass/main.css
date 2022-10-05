@@ -221,7 +221,7 @@ body {
   padding-top: 20px;
 }
 
-@media (min-width: 453px) and (max-width: 992px) {
+@media (min-width: 412px) and (max-width: 992px) {
   #cont_cvz .lager_cvz, #cont_cvz .apa, #cont_cvz .bock, #cont_cvz .pilsen, #cont_cvz .ipa, #cont_cvz .stout_porter, #cont_cvz .ale, #cont_cvz .pale_ale {
     display: flex;
     flex-direction: column;
@@ -238,7 +238,7 @@ body {
     display: none;
   }
 }
-@media (min-width: 453px) and (max-width: 992px) {
+@media (min-width: 412px) and (max-width: 992px) {
   #section1_destinos, .img1_destin p {
     text-align: center;
   }
@@ -250,7 +250,7 @@ body {
     height: auto;
   }
 }
-@media (min-width: 453px) and (max-width: 992px) {
+@media (min-width: 412px) and (max-width: 992px) {
   .copyright {
     display: flex;
     flex-direction: column;

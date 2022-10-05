@@ -1,5 +1,5 @@
 // Pag.Cervezas
-@media (min-width: 453px) and (max-width: 992px) {
+@media (min-width: 412px) and (max-width: 992px) {
     #cont_cvz {
         .lager_cvz,.apa,.bock,.pilsen,.ipa,.stout_porter,.ale,.pale_ale {
             display: flex;
@@ -19,7 +19,7 @@
     }
 }
 //Pag.Destinos
-@media (min-width: 453px) and (max-width: 992px) {
+@media (min-width: 412px) and (max-width: 992px) {
     #section1_destinos, .img1_destin p {
         text-align: center;
     }
@@ -32,7 +32,7 @@
     }
 }
 // Footer
-@media (min-width: 453px) and (max-width: 992px) {
+@media (min-width: 412px) and (max-width: 992px) {
     .copyright {
         display: flex;
         flex-direction: column;
