@@ -250,11 +250,22 @@ body {
     height: auto;
   }
 }
+@media (min-width: 453px) and (max-width: 992px) {
+  .copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-left: 20px;
+  }
+}
 .col-xs-12 a {
   color: white;
 }
 .col-xs-12 a:hover {
   color: greenyellow;
+}
+.col-xs-12 .copyright p {
+  padding-bottom: 25px;
 }
 .col-xs-12 .socialw {
   width: 235px;

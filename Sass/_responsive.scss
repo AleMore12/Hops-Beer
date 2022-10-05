@@ -31,4 +31,13 @@
         }
     }
 }
+// Footer
+@media (min-width: 453px) and (max-width: 992px) {
+    .copyright {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        padding-left: 20px;
+    }
+}
     
