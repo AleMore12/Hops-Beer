@@ -5,9 +5,7 @@
     box-sizing: border-box;
     font-family: sans-serif
 }
-:root{
-    --bs-link-hover-color: orange !important;
-}
+
 #header{
     width: 100%;
 }

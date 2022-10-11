@@ -1,8 +1,13 @@
 
 #header {
     width: 100%;
+    height: 50vh;
+    background-color: #1d2527;
+    .logo__lupulo {
+        @include mx_logo_lupulo;
+    }
     h1{
-        font-size: 55px;
+        font-size: $h1FontSize ;
         text-align: center;
         color: map-get($colores, colorTxt );
         font-family: 'Sancreek', cursive;
@@ -16,23 +21,22 @@
     .header_logo {
         display: flex;
         justify-content: center;
+        margin-top: 60px;
     }
     h2{
         text-align: center;
         color: map-get($colores, colorTxt );
         font-size: 65px;
     }
-    video {
-        width: 100%;
-        margin-top: 60px;
-    }
     .navbar{
-        position: fixed;
         z-index: 100;
         border-radius: 10px;
-        opacity: .4;
+        opacity: .6;
         .nav-link {
             font-family: 'Elsie Swash Caps', cursive;
+        }
+        .collapse ul li a{
+            text-align: center;
         }
     }
 }

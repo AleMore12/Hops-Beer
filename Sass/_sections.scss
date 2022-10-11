@@ -53,7 +53,14 @@ body {
 
 // Página Cerveza
 
+body {
+    background-color: map-get($colores, colorBg ) !important;
+}
+video {
+    width: 100%;
+}
 .estilos_cvz {
+    margin-top: 50px;
     h3 {
         font-size: 50px;
         color: map-get($colores, colorTxt );
@@ -69,9 +76,6 @@ body {
     p {
         text-align: center;
     }
-}
-body {
-    background-color: map-get($colores, colorBg ) !important;
 }
 #cont_cvz {
     display: flex;
@@ -120,8 +124,30 @@ body {
     padding-top: 100px;
 }
 .pale_ale {
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
+.logos_fabricas {
+    background-color: rgb(31, 30, 30);
+    ul{
+    display: grid;
+    grid-template-columns: repeat(10, auto);
+    grid-template-rows: 1fr;
+    row-gap: 10px;
+    list-style: none;
+    margin-bottom: 50px;
+    }
+    img {
+        height: 90px;
+        width: auto;
+    }
+}
+.logos_fabricas2 {
+    display: flex;
+    justify-content: center
+}
+.logo__lupulo {
+    @include mx_logo_lupulo ;
+} 
 
 // Página Destinos
 .carousel {
@@ -158,13 +184,12 @@ body {
 }
 
 
-
-
 // Páginas Contacto
+
 
 #section1_contac {
     padding-left: 10px;
-    margin-top: 70px;
+    margin-bottom: 100px;
     h2,h3, label, .div7__tYc { 
         color: map-get($colores, colorTxt );
     }
@@ -188,6 +213,15 @@ body {
         display: flex;
         gap: 40px;
         padding-top: 20px;
+    }
+    .div8__value input {
+        background-color: orange;
+        border-radius: 10px;
+        color: black;
+        padding: 15px 30px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
     }
 }
 

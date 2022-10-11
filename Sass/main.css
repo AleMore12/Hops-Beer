@@ -1,5 +1,18 @@
 #header {
   width: 100%;
+  height: 50vh;
+  background-color: #1d2527;
+}
+#header .logo__lupulo {
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+  height: 150px;
+}
+#header .logo__lupulo img {
+  height: 250px;
+  width: 450px;
+  position: relative;
 }
 #header h1 {
   font-size: 55px;
@@ -16,24 +29,23 @@
 #header .header_logo {
   display: flex;
   justify-content: center;
+  margin-top: 60px;
 }
 #header h2 {
   text-align: center;
   color: orange;
   font-size: 65px;
 }
-#header video {
-  width: 100%;
-  margin-top: 60px;
-}
 #header .navbar {
-  position: fixed;
   z-index: 100;
   border-radius: 10px;
-  opacity: 0.4;
+  opacity: 0.6;
 }
 #header .navbar .nav-link {
   font-family: "Elsie Swash Caps", cursive;
+}
+#header .navbar .collapse ul li a {
+  text-align: center;
 }
 
 * {
@@ -86,6 +98,17 @@ body p {
   padding-bottom: 100px;
 }
 
+body {
+  background-color: rgb(32, 32, 32) !important;
+}
+
+video {
+  width: 100%;
+}
+
+.estilos_cvz {
+  margin-top: 50px;
+}
 .estilos_cvz h3 {
   font-size: 50px;
   color: orange;
@@ -100,10 +123,6 @@ body p {
 }
 .estilos_cvz p {
   text-align: center;
-}
-
-body {
-  background-color: rgb(32, 32, 32) !important;
 }
 
 #cont_cvz {
@@ -156,7 +175,40 @@ body {
 }
 
 .pale_ale {
-  margin-bottom: 200px;
+  margin-bottom: 100px;
+}
+
+.logos_fabricas {
+  background-color: rgb(31, 30, 30);
+}
+.logos_fabricas ul {
+  display: grid;
+  grid-template-columns: repeat(10, auto);
+  grid-template-rows: 1fr;
+  row-gap: 10px;
+  list-style: none;
+  margin-bottom: 50px;
+}
+.logos_fabricas img {
+  height: 90px;
+  width: auto;
+}
+
+.logos_fabricas2 {
+  display: flex;
+  justify-content: center;
+}
+
+.logo__lupulo {
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+  height: 150px;
+}
+.logo__lupulo img {
+  height: 250px;
+  width: 450px;
+  position: relative;
 }
 
 .carousel {
@@ -192,7 +244,7 @@ body {
 
 #section1_contac {
   padding-left: 10px;
-  margin-top: 70px;
+  margin-bottom: 100px;
 }
 #section1_contac h2, #section1_contac h3, #section1_contac label, #section1_contac .div7__tYc {
   color: orange;
@@ -220,8 +272,17 @@ body {
   gap: 40px;
   padding-top: 20px;
 }
+#section1_contac .div8__value input {
+  background-color: orange;
+  border-radius: 10px;
+  color: black;
+  padding: 15px 30px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 
-@media (min-width: 412px) and (max-width: 992px) {
+@media (min-width: 412px) and (max-width: 1100px) {
   #cont_cvz .lager_cvz, #cont_cvz .apa, #cont_cvz .bock, #cont_cvz .pilsen, #cont_cvz .ipa, #cont_cvz .stout_porter, #cont_cvz .ale, #cont_cvz .pale_ale {
     display: flex;
     flex-direction: column;
@@ -229,8 +290,18 @@ body {
   #cont_cvz .apa {
     margin-top: 50px;
   }
+  .logos_fabricas {
+    background-color: rgb(31, 30, 30);
+  }
+  .logos_fabricas ul {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, auto);
+    row-gap: 20px;
+  }
 }
-@media (max-width: 590px) {
+@media (min-width: 412px) and (max-width: 1100px) and (max-width: 590px) {
   .cvz_style_h3 {
     margin-top: 100px;
   }
@@ -238,7 +309,7 @@ body {
     display: none;
   }
 }
-@media (min-width: 412px) and (max-width: 992px) {
+@media (min-width: 412px) and (max-width: 1100px) and (min-width: 412px) and (max-width: 992px) {
   #section1_destinos, .img1_destin p {
     text-align: center;
   }
@@ -250,7 +321,7 @@ body {
     height: auto;
   }
 }
-@media (min-width: 412px) and (max-width: 992px) {
+@media (min-width: 412px) and (max-width: 1100px) and (min-width: 412px) and (max-width: 992px) {
   .copyright {
     display: flex;
     flex-direction: column;
