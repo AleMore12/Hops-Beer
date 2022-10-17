@@ -19,3 +19,25 @@ $h1FontSize : 55px;
         position: relative;
     }
 }
+// mixin bares en las diferentes zonas
+@mixin divs_bares {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 1fr;
+    column-gap: 10px;
+    img {
+        width: auto;
+        height: 200px;
+        border-radius: 25px;
+        opacity: .6;
+        margin: auto;
+        transition: all 1s;
+        &:hover {
+            transform: scale(1.5);
+            opacity: .9;
+            padding-bottom: 40px;
+            padding-right: 15px;
+        }
+    }
+}
+

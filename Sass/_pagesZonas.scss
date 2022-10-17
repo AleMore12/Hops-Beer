@@ -1,0 +1,66 @@
+// ZONA OESTE
+span h2{
+    color: map-get($colores , colorTxt );
+    text-align: center;
+    font-size: 55px;
+}
+#bares_Z_O {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    overflow-x: hidden;
+    margin-bottom: 150px;
+    p {
+        text-align: center;
+    }
+    h4 {
+        color: map-get($colores , colorTxt);
+        margin-bottom: 50px;
+        padding-left: 90px;
+        margin-top: 50px;
+        margin-left: 15px;
+        border-bottom: 5px double orange;
+        border-radius:30px 30px;
+        width: 25%;
+        font-family:'Elsie Swash Caps', cursive;
+        font-size: 35px;
+    }
+    .bar1, .bar2, .bar3, .bar4{
+        @include divs_bares ;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ZONA NORTE 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ZONA SUR

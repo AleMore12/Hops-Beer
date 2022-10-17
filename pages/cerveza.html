@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
     <header id="header">
@@ -43,8 +46,15 @@
                         <li class="nav-item">
                             <a class="nav-link" href="./cerveza.html">Cervezas</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./destinos.html">Destinos</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="./pages/destinos.html">Destinos</a>
+                            <ul class="dropdown-menu bg-warning">
+                                <li><a class="dropdown-item" href="./destinos.html">Destinos</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="./zona-oeste.html">Zona Oeste</a></li>
+                                <li><a class="dropdown-item" href="./zona-norte.html">Zona Norte</a></li>
+                                <li><a class="dropdown-item" href="./zona-sur.html">Zona Sur</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./contacto.html">Contactanos</a>
@@ -62,18 +72,34 @@
     </div> 
     
     <video src="../multimedia/Multimedia-CERVEZAS/beer-home-cvz.mp4" autoplay></video>
-    <section>
+    <section id="cont_cvz1">
         <article class="estilos_cvz">
             <h3>Estilos</h3>
             <p> La cerveza es una bebida que ha formado parte de la historia de la humanidad. Durante muchos años ha sido el consumo de cerveza industrial aquel que se había diversificado como la bebida típica de todo tipo de reuniones; pero esto ha dado un nuevo giro en los últimos años gracias al espacio que se ha sabido hacer la cerveza artesanal</p>
             <img src="../multimedia/Multimedia-CERVEZAS/beer-style2.jpg" alt="beerStyle">
+            <div class="estilos_div_1">
+                <img src="/multimedia/cita-izquierda.png" alt="comillas">
+                <h4>¿Que es un estilo de cerveza?</h4>
+            </div>
+            <div class="estilos_div_2">
+                <img src="/multimedia/mapa-tipos-cervezas-artesanal.png" alt="mapa-cerveza">
+                <p>El estilo de cerveza es una expresión utilizada para diferenciar y clasificar las cervezas por su color, sabor, ingredientes, método de producción, receta, historia u origen,las cervezas se clasifican en dos grandes grupos: Lager y Ale. Esta división parte del tipo de levadura con la que se elaboran.</p>
+            </div>
+            <div class="estilos_div_3">
+                <img src="/multimedia/cita-izquierda.png" alt="comillas">
+                <h4>¿Cuántos estilos de cerveza hay?</h4>
+            </div>
+            <div class="estilos_div_4">
+                <img src="/multimedia/map-cerveza-2.jpg" alt="mapa-cerveza">
+                <p>El estilo de cerveza es una expresión utilizada para diferenciar y clasificar las cervezas por su color, sabor, ingredientes, método de producción, receta, historia u origen,las cervezas se clasifican en dos grandes grupos: Lager y Ale. Esta división parte del tipo de levadura con la que se elaboran.</p>
+            </div>
         </article>
     </section>
     <section id="cont_cvz">
-            <div class="cvz_style_h3">
+            <div class="cvz_style_h3" data-aos="fade-right">
                 <h3>Lager</h3>
             </div>
-            <div class="lager_cvz">
+            <div class="lager_cvz" data-aos="fade-left">
                 <img src="../multimedia/Multimedia-CERVEZAS/lager/cerveza-tipo-lager-1-758x426.jpg" alt="lager">
                 <p>Las características de cervezas lagers pueden ser muy variadas, los colores pueden ser muy variados. Si nos dicen «dibuja una cerveza» seguramente dibujaremos un del tipo Lager, ya que la cerveza como la conocemos en nuestra cabeza es, en la mayoría, de color dorado, o naranja claro, y con un espuma blanca, pero los colores y características de este tipo no quedan acá. Es así que las diferencias de las Lager dan lugar a los distintos estilos dentro de esta familia, que si hablamos de colores van desde claras cristalinas a oscuras negras.
                 Utilizan levadura del tipo Saccharomyces uvarum.
@@ -82,10 +108,10 @@
                 Se acostumbra a servir mas fría que las tipo Ale, entre 3°c y 7°c aprox.
                 Son de fermentación baja. </p>
             </div>
-            <div class="cvz_style_h3">
+            <div class="cvz_style_h3" data-aos="fade-left">
                 <h3>India Pale Ale</h3>
             </div>
-            <div class="ipa">
+            <div class="ipa" data-aos="fade-right">
                 <img src="../multimedia/Multimedia-CERVEZAS/ipa--apa/estilo-ipa-758x426.png" alt="estiloIpa">
                 <p>El desarrollo de las IPA dio lugar a la medición de la amargura en las cervezas, lo que se conoce como IBU, una forma estandarizada para saber que tan amarga es nuestra cerveza, esto lo determina principalmente los distintos tipos de lúpulos que se utilizan en la elaboración de la cerveza.
                     Hace varios años este estilo de cerveza esta muy de moda en la mayorías de las cervecerías alrededor del mundo, éstas dedican grandes esfuerzos en su elaboración.
@@ -99,49 +125,49 @@
                     
                 
             </div>
-            <div class="cvz_style_h3">
+            <div class="cvz_style_h3" data-aos="fade-right">
                 <h3>American Pale Ale</h3>
             </div>
-            <div class="apa">
+            <div class="apa" data-aos="fade-left">
                 <img src="../multimedia/Multimedia-CERVEZAS/ipa--apa/cerveza-american-pale-ale-1.png" alt="apa">
                 <p>La cerveza American Pale Ale (APA) es la versión americana de su homónima Indian Pale Ale (IPA). Las estas dos cervezas se elaboraban con mayor cantidad de lúpulo para poder trasportada de un continente a otro durante periodos de tiempo muy largos.La gran diferencia entre estas dos cervezas es que en la American Pale Ale se usan lúpulos americanos. Estos lúpulos americanos dejan algo menos de amargor, teniendo un IBU un poco más bajo que la IPA.</p>
             </div>
-            <div class="cvz_style_h3">
+            <div class="cvz_style_h3" data-aos="fade-left">
                 <h3>Stout y Porter</h3>
             </div>
-            <div class="stout_porter">
+            <div class="stout_porter" data-aos="fade-right">
                 <img src="../multimedia/Multimedia-CERVEZAS/Stout--Porter/estilos-stout-porter-758x426.png" alt="stoutPorter">
                 <p> <strong>Porter</strong> es más ligera en cuerpo y alcohol en comparación con la Stout. Presenta bastante carácter a chocolate procedente de cebada malteada muy tostada, y suelen ser secas. <strong>Stout</strong> acostumbran a ser mas pesadas en cuerpo, con mas de un foco en café tostado y sabores de malta de cebada tostada, mas que las Porter. Algo que también diferencia una de otra, es el color, estas son mucho mas oscuras, prácticamente negras, con espuma mas densa. Hay quienes dicen que simplemente el lugar de origen es su principal diferencia, Porter es originaria de Londres, mientras que Stout nace en Irlanda, pero esto no queda aquí, claramente.
                 Las <strong>Stout</strong> se pueden clasificar como unas cervezas Ale con mas cuerpo y graduación de alcohol que las Porter. </p>
             </div>
-            <div class="cvz_style_h3">
+            <div class="cvz_style_h3" data-aos="fade-right">
                 <h3>Bock</h3>
             </div>
-            <div class="bock">
+            <div class="bock" data-aos="fade-left">
                 <img src="../multimedia/Multimedia-CERVEZAS/Bock/estilo-bock.jpg" alt="bock">
                 <p>Bock es un estilo de cerveza centroeuropeo nacido en Alemania, tradicional y perdurable en el tiempo. Estas cervezas calificadas como “lager fuertes”, casi siempre tirando a oscuras, solían elaborarse hacia finales del otoño y almacenarse en barriles de madera, en los «lagered» o bodegas durante todo el invierno, hasta su consumo ya con la llegada del buen tiempo. Son de baja fermentación aunque también destacan un rango de cervezas de fermentación alta que entran en la categoría. Resaltan por sus  tonalidades de color, desde dorado a ámbar, pasando por rojizo hasta café.</p>
             </div>
             
-            <div class="cvz_style_h3">
+            <div class="cvz_style_h3" data-aos="fade-left">
                 <h3>Ale</h3>
             </div>
-            <div class="ale">
+            <div class="ale" data-aos="fade-right">
                 <img src="../multimedia/Multimedia-CERVEZAS/Ale/cerveza-tipo-ale-758x426.png" alt="tipoAle">
                 <p>Las Ales conforman un tipo de fermentación ampliamente extendido por el mundo. Su origen data de la época medieval (aunque no se conocía el proceso de fermentación ni la levadura), donde constituían una importante fuente de nutrientes y forma de hidratación. Con levadura de alta fermentación, también conocida como Saccharomyces cerevisiae. Esta levadura tiene tendencia a desarrollar su actividad en la parte alta de los tanques de fermentación, para después descender al fondo cuando se detiene su actividad y finaliza el proceso. Junto a las lager y las cervezas de fermentación espontánea, las cervezas Ale son uno de los tres tipos de fermentación de los que forman parte todas las cervezas del mundo.</p>
             </div>  
             
-            <div class="cvz_style_h3">
+            <div class="cvz_style_h3" data-aos="fade-right">
                 <h3>Pilsen</h3>
             </div>
-            <div class="pilsen">
+            <div class="pilsen" data-aos="fade-left">
                 <img src="../multimedia/Multimedia-CERVEZAS/Pilsen/cerveza-estilo-pilsen-758x426.png" alt="pilsen">
                 <p>El nombre de este estilo de cerveza perteneciente a la familia Lager viene de la variedad de cebada malteada que se emplea para su elaboración, la malta Pilsen. En cualquier parte del mundo donde se fabrique una cerveza Pilsen se utiliza este tipo de malta que le confiere el color dorado y un toque dulce a pan o galleta. Hoy en día Pilsen es el estilo de cerveza que se produce en mayor cantidad y por tanto el más consumido en todo el mundo. Su baja graduación y su cuerpo ligero hacen a esta cerveza fácil de beber y adecuada para casi todos los paladares</p>
             </div> 
             
-            <div class="cvz_style_h3">
+            <div class="cvz_style_h3" data-aos="fade-left">
                 <h3>Pale Ale</h3>
             </div>
-            <div class="pale_ale">
+            <div class="pale_ale" data-aos="fade-right">
                 <img src="../multimedia/Multimedia-CERVEZAS/Pale-ale/estilo-pale-ale1-758x426.png" alt="paleAle">
                 <p>Cuando nos referimos a la cerveza Pale Ale lo hacemos a una denominación que engloba diferentes tipos de cervezas. Su origen es inglés y las encontramos en varios países con diferentes nombres y marcas. El origen de esta cerveza data del año 1790 cuando los ingleses crearon sus colonias y viajaban alrededor del mundo. Al ver que la cerveza que traían de Inglaterra no se conservaba bien en lugares muy cálidos se decidió elaborarla en el propio lugar. Son cervezas de mayor calidad, menos amargas, sobretodo las inglesas, y un poco más densas. Su concentración alcohólica suele ser entre un 4 y un 5%. Dependiendo de las variedades predominarán distintos matices, como el lúpulo en las cervezas IPA (India Pale Ale) o el aroma en las American Pale Ale (APA).</p>
             </div>
@@ -201,6 +227,7 @@
                 <img src="../hops-31495.png" alt="logo">
             </div>
     
+<footer>
     <div class="container-fluid">
         <div class="row p-5 bg-dark">
             <div class="col-xs-12 col-md-6 col-lg-3">
@@ -243,30 +270,39 @@
             
             <div class="col-xs-12 pt-5" >
                 <!-- Icons Start !-->
-                <div class="socialw fadeInDown ">  
+                <div>  
                     <!-- Facebook !-->
-                    <a href="https://facebook.com" target="_blank">   
-                    <div class="social first "> <img src="/multimedia/iconos_footer/Fs.png" alt="redSocial"/></div>
+                <a href="https://facebook.com" target="_blank">   
+                    <div class="social"> <img src="../multimedia/iconos_footer/facebook.png" alt="redSocial" width="30px" height="35px"/></div>
                 </a>
                 <!-- Facebook !-->
                 
                 <!-- Intagram !-->
-                <a href="https://www.instagram.com/" target="_blank">    
-                    <div class="social "><img src="/multimedia/iconos_footer/instagram.png" alt="redSocial"/></div>
+                <a href="https://instagram.com" target="_blank">   
+                    <div class="social"><img src="../multimedia/iconos_footer/instagram.png" alt="redSocial" width="30px" height="35px"/></div>
                 </a>
                 <!-- Instagram !-->
                 
-                <!-- Twitter !-->
-                <a href="https://twitter.com" target="_blank">   
-                    <div class="social "> <img src="/multimedia/iconos_footer/twitter.png" alt="redSocial"/> </div>
+                <!-- Email !-->
+                <a href="https://gmail.com" target="_blank">   
+                    <div class="social"> <img src="../multimedia/iconos_footer/email.png" alt="redSocial" width="30px" height="35px"/></div>
                 </a>
-                <!-- Twitter !-->
+                <!-- Email !-->
                 </div>
                 <!-- Icons End !-->
                 <span class="copyright"><p class="text-white text-center">Copyright - All rights reserved © 2022</p></span>
             </div>
         </div>
-    </div>  
+    </div> 
+</footer>
+
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init("fade-left", "fade-right");
+    </script>
+
 <!-- JavaScript Bootstrap-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
