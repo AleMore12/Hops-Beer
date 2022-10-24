@@ -52,7 +52,6 @@ body {
 }
 
 // Página Cerveza
-
 body {
     background-color: map-get($colores, colorBg ) !important;
 }
@@ -334,10 +333,4 @@ video {
         .div4__img__elab, .div5__img__elab,.div6__img__elab,.div7__img__elab,.div8__img__elab{
             @extend .div3__img__elab ;
         }
-
     }
-        
-
-
-
-
