@@ -139,19 +139,22 @@ video {
   flex-direction: row;
 }
 .estilos_cvz .estilos_div_2 img, .estilos_cvz .estilos_div_4 img {
-  width: 500px;
-  height: 300px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
 }
+.estilos_cvz .estilos_div_4 img {
+  width: 500px;
+  height: 450px;
+}
+
 #cont_cvz {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
+  overflow-x: hidden;
 }
-#cont_cvz .cvz_style_h3 {
-  margin-right: 25%;
-  margin-left: 25%;
-}
-#cont_cvz .cvz_style_h3 h3 {
+#cont_cvz h3 {
   color: orange;
   text-align: center;
   margin-top: 150px;
@@ -161,6 +164,10 @@ video {
   padding-top: 25px;
   font-size: 40px;
 }
+#cont_cvz .cvz_style_h3 {
+  margin-right: 25%;
+  margin-left: 25%;
+}
 #cont_cvz .cvz_style_h3 p {
   padding-top: 30px;
 }
@@ -168,25 +175,29 @@ video {
 .lager_cvz, .apa, .bock, .pilsen {
   display: flex;
   flex-direction: row-reverse;
-  width: auto;
 }
 .lager_cvz p, .apa p, .bock p, .pilsen p {
   text-align: center;
 }
 .lager_cvz img, .apa img, .bock img, .pilsen img {
   border-radius: 20px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 
 .ipa, .stout_porter, .ale, .pale_ale {
   display: flex;
   flex-direction: row;
-  width: auto;
 }
 .ipa p, .stout_porter p, .ale p, .pale_ale p {
   text-align: center;
 }
 .ipa img, .stout_porter img, .ale img, .pale_ale img {
   border-radius: 20px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 
 .apa {
@@ -343,6 +354,28 @@ video {
   transform: rotate(45deg);
 }
 
+#main1__elab h2, #main1__elab h3, #main1__elab h5 {
+  color: orange;
+  font-family: "Sancreek", cursive;
+}
+#main1__elab p {
+  text-align: center;
+}
+#main1__elab .div2__elab {
+  color: orange;
+}
+#main1__elab .div2__elab ul li {
+  color: rgb(88, 141, 10);
+}
+#main1__elab .div3__img__elab, #main1__elab .div4__img__elab, #main1__elab .div5__img__elab, #main1__elab .div6__img__elab, #main1__elab .div7__img__elab, #main1__elab .div8__img__elab {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+#main1__elab .div3__img__elab img, #main1__elab .div4__img__elab img, #main1__elab .div5__img__elab img, #main1__elab .div6__img__elab img, #main1__elab .div7__img__elab img, #main1__elab .div8__img__elab img {
+  border-radius: 20px;
+}
 span h2 {
   color: orange;
   text-align: center;
@@ -353,7 +386,6 @@ span h2 {
   display: flex;
   flex-direction: column;
   margin-top: 100px;
-  overflow-x: hidden;
   margin-bottom: 150px;
 }
 #bares_Z_O p {
@@ -369,7 +401,7 @@ span h2 {
   border-radius: 30px 30px;
   width: 25%;
   font-family: "Elsie Swash Caps", cursive;
-  font-size: 35px;
+  font-size: 45px;
 }
 #bares_Z_O .bar1, #bares_Z_O .bar2, #bares_Z_O .bar3, #bares_Z_O .bar4 {
   display: grid;
@@ -392,6 +424,47 @@ span h2 {
   padding-bottom: 40px;
   padding-right: 15px;
 }
+#bares_Z_O .redes {
+  display: flex;
+  gap: 20px;
+}
+#bares_Z_O .redes a {
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  padding-top: 60px;
+}
+#bares_Z_O .redes h5 {
+  padding-top: 60px;
+  font-family: "Elsie Swash Caps", cursive;
+  font-size: 20px;
+  color: orange;
+  width: auto;
+}
+#bares_Z_O .iframe_img {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  justify-items: center;
+}
+#bares_Z_O .iframe_img img {
+  width: auto;
+  height: 200px;
+  border-radius: 25px;
+  opacity: 0.6;
+  margin-top: 30px;
+  transition: all 1s;
+}
+#bares_Z_O .iframe_img img:hover {
+  transform: scale(1.5);
+  opacity: 0.9;
+  padding-bottom: 40px;
+  padding-right: 15px;
+}
+#bares_Z_O iframe {
+  margin-top: 20px;
+  width: auto;
+}
 
 @media (min-width: 412px) and (max-width: 1100px) {
   #cont_cvz .lager_cvz, #cont_cvz .apa, #cont_cvz .bock, #cont_cvz .pilsen, #cont_cvz .ipa, #cont_cvz .stout_porter, #cont_cvz .ale, #cont_cvz .pale_ale {
@@ -400,6 +473,15 @@ span h2 {
   }
   #cont_cvz .apa {
     margin-top: 50px;
+  }
+  #cont_cvz .estilos_div_2, #cont_cvz .estilos_div_4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #cont_cvz .estilos_div_2 img, #cont_cvz .estilos_div_4 img {
+    width: 100%;
+    height: auto;
   }
   .logos_fabricas {
     background-color: rgb(31, 30, 30);
@@ -412,7 +494,12 @@ span h2 {
     row-gap: 20px;
   }
 }
-@media (min-width: 412px) and (max-width: 1100px) and (max-width: 590px) {
+@media (max-width: 484px) {
+  .div1_cvz h3 {
+    padding-bottom: 110px;
+  }
+}
+@media (max-width: 590px) {
   .cvz_style_h3 {
     margin-top: 100px;
   }
@@ -420,7 +507,7 @@ span h2 {
     display: none;
   }
 }
-@media (min-width: 412px) and (max-width: 1100px) and (min-width: 412px) and (max-width: 992px) {
+@media (min-width: 412px) and (max-width: 992px) {
   #section1_destinos, .img1_destin p {
     text-align: center;
   }
@@ -432,7 +519,7 @@ span h2 {
     height: auto;
   }
 }
-@media (min-width: 412px) and (max-width: 1100px) and (min-width: 412px) and (max-width: 992px) {
+@media (min-width: 412px) and (max-width: 992px) {
   .copyright {
     display: flex;
     flex-direction: column;
@@ -440,7 +527,7 @@ span h2 {
     padding-left: 20px;
   }
 }
-@media (min-width: 412px) and (max-width: 1100px) {
+@media (min-width: 412px) and (max-width: 1200px) {
   #bares_Z_O h4 {
     padding-left: 0%;
     width: auto;
@@ -465,6 +552,21 @@ span h2 {
     opacity: 0.9;
     padding-bottom: 40px;
     padding-right: 15px;
+  }
+  #bares_Z_O .iframe_img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+}
+@media (min-width: 412px) and (max-width: 1100px) {
+  .div3__img__elab, #main1__elab .div4__img__elab, #main1__elab .div5__img__elab, #main1__elab .div6__img__elab, #main1__elab .div7__img__elab, #main1__elab .div8__img__elab, .div4__img__elab, .div5__img__elab, .div6__img__elab, .div7__img__elab, .div8__img__elab {
+    display: flex;
+    flex-direction: column;
+  }
+  .div3__img__elab img, #main1__elab .div4__img__elab img, #main1__elab .div5__img__elab img, #main1__elab .div6__img__elab img, #main1__elab .div7__img__elab img, #main1__elab .div8__img__elab img, .div4__img__elab img, .div5__img__elab img, .div6__img__elab img, .div7__img__elab img, .div8__img__elab img {
+    width: auto;
+    height: auto;
   }
 }
 .col-xs-12 a {

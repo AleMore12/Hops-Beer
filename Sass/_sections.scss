@@ -93,8 +93,9 @@ video {
         display: flex;
         flex-direction: row;
         img {
-            width: 500px;
-            height: 300px;
+            display: flex;
+            flex-direction: row;
+            border-radius: 10px;
         }
     }
     .estilos_div_3 {
@@ -103,24 +104,32 @@ video {
     .estilos_div_4 {
         @extend .estilos_div_2
     }
+    .estilos_div_4{
+        img {
+            width: 500px;
+            height: 450px;
+        }
+    }
+    
 }
 #cont_cvz {
     display: flex;
     flex-direction: column;
     row-gap: 20px;
+    overflow-x:hidden ;
+    h3 {
+        color: map-get($colores, colorTxt );
+        text-align: center;
+        margin-top: 150px;
+        border: 5px solid orange;
+        border-radius: 10px;
+        height: 100px;
+        padding-top: 25px;
+        font-size: 40px;
+    }
     .cvz_style_h3 {
         margin-right: 25%;
         margin-left: 25%;
-        h3 {
-            color: map-get($colores, colorTxt );
-            text-align: center;
-            margin-top: 150px;
-            border: 5px solid orange;
-            border-radius: 10px;
-            height: 100px;
-            padding-top: 25px;
-            font-size: 40px;
-        }
         p {
             padding-top: 30px;
         }
@@ -130,23 +139,23 @@ video {
 .lager_cvz,.apa,.bock,.pilsen {
     display: flex;
     flex-direction: row-reverse;
-    width: auto;
     p {
         text-align: center;
     }
     img {
         border-radius: 20px;
+        height: max-content;
     }
 }
 .ipa,.stout_porter,.ale,.pale_ale {
     display: flex;
     flex-direction: row;
-    width: auto;
     p {
         text-align: center;
     }
     img {
         border-radius: 20px;
+        height: max-content;
     }
 }
 .apa {
@@ -296,7 +305,37 @@ video {
         -webkit-transform: rotate(45deg);
         transform: rotate(45deg);
     }
-}  
+}
+
+// Páginas Elaboración
+    #main1__elab{
+        h2, h3 ,h5{
+            color: map-get($colores, colorTxt );
+            font-family: 'Sancreek', cursive;
+        }
+        p {
+            text-align: center;
+        }
+        .div2__elab {
+            color: map-get($colores, colorTxt );
+            ul li {
+                color: rgb(88, 141, 10);
+            }
+        }
+        .div3__img__elab {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 20px;
+            img {
+                border-radius: 20px
+            }
+        }
+        .div4__img__elab, .div5__img__elab,.div6__img__elab,.div7__img__elab,.div8__img__elab{
+            @extend .div3__img__elab ;
+        }
+
+    }
         
 
 
